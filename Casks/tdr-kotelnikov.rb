@@ -7,4 +7,11 @@ cask 'tdr-kotelnikov' do
   homepage 'http://www.tokyodawn.net/tdr-kotelnikov/'
 
   pkg "TDR Kotelnikov.pkg"
+
+  uninstall pkgutil: [
+    'com.TokyoDawnLabs.TDRKotelnikov.VST',
+    'com.TokyoDawnLabs.TDRKotelnikov.VST3',
+    'com.TokyoDawnLabs.TDRKotelnikov.AU',
+    'com.TokyoDawnLabs.TDRKotelnikov.AAX'
+  ]
 end
